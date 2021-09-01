@@ -94,7 +94,7 @@ public class OrdenEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "id_cliente", referencedColumnName = "id_cliente", nullable = false)
+    @JoinColumn(name = "id_cliente", insertable= false, updatable= false)
     public ClienteEntity getClienteByIdCliente() {
         return clienteByIdCliente;
     }
@@ -104,7 +104,7 @@ public class OrdenEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "id_mesa", referencedColumnName = "id_mesa", nullable = false)
+    @JoinColumn(name = "id_mesa", insertable= false, updatable= false)
     public MesaEntity getMesaByIdMesa() {
         return mesaByIdMesa;
     }

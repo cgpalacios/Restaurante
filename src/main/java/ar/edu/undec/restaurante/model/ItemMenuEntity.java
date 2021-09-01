@@ -59,7 +59,7 @@ public class ItemMenuEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "id_menu", referencedColumnName = "id_menu", nullable = false)
+    @JoinColumn(name = "id_menu", insertable= false, updatable= false)
     public MenuEntity getMenuByIdMenu() {
         return menuByIdMenu;
     }
@@ -69,7 +69,7 @@ public class ItemMenuEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "id_orden", referencedColumnName = "id_orden", nullable = false)
+    @JoinColumn(name = "id_orden", insertable= false, updatable= false)
     public OrdenEntity getOrdenByIdOrden() {
         return ordenByIdOrden;
     }

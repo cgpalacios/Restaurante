@@ -1,9 +1,7 @@
 package ar.edu.undec.restaurante.dto;
 
 
-import lombok.Data;
 
-@Data
 public class MenuDto {
 
     private int idMenu;

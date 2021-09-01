@@ -1,8 +1,6 @@
 package ar.edu.undec.restaurante.dto;
 
-import lombok.Data;
 
-@Data
 public class FacturaDto {
 
     private int idFactura;

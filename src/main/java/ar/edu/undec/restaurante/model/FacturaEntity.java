@@ -70,7 +70,7 @@ public class FacturaEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "id_orden", referencedColumnName = "id_orden", nullable = false)
+    @JoinColumn(name = "id_orden",insertable= false, updatable= false)
     public OrdenEntity getOrdenByIdOrden() {
         return ordenByIdOrden;
     }

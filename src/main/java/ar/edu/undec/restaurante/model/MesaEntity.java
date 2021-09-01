@@ -84,7 +84,7 @@ public class MesaEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "id_restaurante", referencedColumnName = "id_restaurante", nullable = false)
+    @JoinColumn(name = "id_restaurante", insertable= false, updatable= false)
     public RestauranteEntity getRestauranteByIdRestaurante() {
         return restauranteByIdRestaurante;
     }
